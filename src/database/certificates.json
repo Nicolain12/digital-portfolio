@@ -1,0 +1,77 @@
+[
+    {
+        "name": "DigitalHouse",
+        "image": "digitalHouse.jpg",
+        "year": "2022 - 2023",
+        "skills": [
+            "Node js",
+            "JavaScript",
+            "React",
+            "OOP",
+            "HTML",
+            "CSS",
+            "MySql",
+            "APIs",
+            "Git and GitHub",
+            "Agile methodologies - Scrum", 
+            "Expressjs",
+            "Architecture pattern MVC",
+            "Postman",
+            "Sequelize"
+        ]
+    },
+    {
+        "name": "Object Oriented Programming",
+        "image": "OOP.jpg",
+        "year": "2023",
+        "skills": ""
+    },
+    {
+        "name": "Asyncronism",
+        "image": "async.jpg",
+        "year": "2023",
+        "skills": ""
+    },
+    {
+        "name": "Node Fundaments",
+        "image": "nodefunds.jpg",
+        "year": "2023",
+        "skills": ""
+    },
+    {
+        "name": "Array Management",
+        "image": "arrays.jpg",
+        "year": "2023",
+        "skills": ""
+    },
+    {
+        "name": "Object Oriented Programming Basics",
+        "image": "BOOP.jpg",
+        "year": "2023",
+        "skills": ""
+    },
+    {
+        "name": "Closures and Scope",
+        "image": "closuresScope.jpg",
+        "year": "2023",
+        "skills": ""
+    },
+    {
+        "name": "Backend Introduction",
+        "image": "backIntro.jpg",
+        "year": "2023",
+        "skills": ""
+    },
+    {
+        "name": "English For Developers",
+        "image": "devEnglish.jpg",
+        "year": "2023",
+        "skills": ""
+    },
+    {
+        "name": "Basic JavaScript",
+        "image": "basicJs.jpg",
+        "year": "2023",
+        "skills": ""
+    }
+]

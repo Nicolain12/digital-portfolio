@@ -1,8 +1,256 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100vw;
+  margin: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
 }
 
-a {
-  color: #00B7FF;
+/*************** header ***************/
+header {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
 }
+
+.h-logo-div h3 {
+  margin: 6% 0;
+}
+
+.h-logo-div h5 {
+  margin: 0%;
+}
+
+.h-apps-div {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.h-apps-div i {
+  margin-top: 6%;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.h-apps-div i:hover {
+  font-size: 26px;
+}
+
+@media (min-width: 724px) {
+  header {
+    width: 70%;
+    position: absolute;
+  }
+
+  .h-apps-div {
+    width: 15%;
+  }
+}
+
+/*************** banner ***************/
+.banner-img {
+  display: none;
+  width: 100%;
+}
+
+@media (min-width: 724px) {
+  .banner-img {
+    display: block;
+  }
+}
+
+/*************** knowledges ***************/
+.knowledge-main-div {
+  width: 95%;
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.knowledge-title {
+  width: 100%;
+}
+
+/* Back */
+
+.knowledge-tech-div {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-title {
+  width: 100%;
+}
+
+.knowledge-tech-main-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- */
+.technologie-div {
+  width: 70%;
+  display: flex;
+  padding: 2%;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.technologie-div:hover {
+  transform: translateY(-5px);
+  /* Lift the element by 5px */
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+  /* Enhanced box shadow on hover */
+}
+
+.tech-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.tech-img img {
+  width: 100%;
+}
+
+.tech-name {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-name h6 {
+  font-size: 20px;
+}
+
+/* --- */
+
+@media (min-width: 724px) {
+  .knowledge-main-div {
+    width: 70%;
+    border-top: none;
+  }
+
+  .knowledge-tech-main-div {
+    flex-direction: row;
+  }
+}
+
+/*************** certificates ***************/
+.main-certificates-div {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+.certificates-arrows-div {
+  display: none;
+}
+
+.certificates-info-div-short {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.certificates-info-div-short-hidden {
+  display: none;
+}
+
+.certificates-info-div-long {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.certificates-info-div-long-hidden {
+  display: none;
+}
+/* --- */
+.certificate-div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  cursor: pointer;
+  /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s; */
+}
+
+.certificate-div:hover {
+  transform: translateY(-5px);
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.certificate-img img {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.certificate-name-year-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.certificate-name-year-div h6 {
+  margin: 2% 0;
+  font-size: 20px;
+}
+
+.certificate-name-year-div p {
+  margin-top: 0;
+  font-size: 20px;
+}
+.see-more-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.see-more-div p{
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.see-more-div p:hover{
+  font-weight: 600;
+}
+/* --- */
+
+
+@media (min-width: 724px) {
+  .certificates-info-div-short{
+    display: none;
+  }
+  .see-more-div{
+    display: none;
+  }
+  .certificates-info-div-long-hidden,
+  .certificates-info-div-long{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/*************** projects ***************/
+/*************** contact ***************/
+/*************** footer ***************/

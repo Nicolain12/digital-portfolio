@@ -1,0 +1,63 @@
+<div class="knowledge-main-div">
+    <div class="knowledge-title">
+        <h2>Knowledge's </h2>
+    </div>
+    <div class="knowledge-tech-main-div">
+        <!-- Back -->
+        <div class="knowledge-tech-div">
+            <div class="tech-title">
+                <h4>Back-End</h4>
+            </div>
+            <% for( const tech of backEnd ){%>
+                <div class="technologie-div">
+                    <div class="tech-img">
+                        <img src='/images/technologies/<%= tech.image %>' alt="">
+                    </div>
+                    <div class="tech-name">
+                        <h6>
+                            <%= tech.name %>
+                        </h6>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+        <!-- Front -->
+        <div class="knowledge-tech-div">
+            <div class="tech-title">
+                <h4>Front-End</h4>
+            </div>
+            <% for( const tech of frontEnd ){%>
+                <div class="technologie-div">
+                    <div class="tech-img">
+                        <img src='/images/technologies/<%= tech.image %>' alt="">
+                    </div>
+                    <div class="tech-name">
+                        <h6>
+                            <%= tech.name %>
+                        </h6>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+        <!-- Tools -->
+        <div class="knowledge-tech-div">
+            <div class="tech-title">
+                <h4>Tools</h4>
+            </div>
+            <% for( const tech of tools ){%>
+                <div class="technologie-div">
+                    <div class="tech-img">
+                        <img src='/images/technologies/<%= tech.image %>' alt="">
+                    </div>
+                    <div class="tech-name">
+                        <h6>
+                            <%= tech.name %>
+                        </h6>
+                    </div>
+                </div>
+                <% } %>
+        </div>
+    </div>
+    <div class="knowledge-frontend-div"></div>
+    <div class="knowledge-tools-div"></div>
+</div>

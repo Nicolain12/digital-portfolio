@@ -82,6 +82,7 @@ function onError(error) {
  */
 
 function onListening() {
+  console.log('http://localhost:3000');
   const addr = server.address();
   const bind = typeof addr === 'string'
     ? 'pipe ' + addr
