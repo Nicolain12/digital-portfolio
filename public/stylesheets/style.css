@@ -105,9 +105,7 @@ header {
 
 .technologie-div:hover {
   transform: translateY(-5px);
-  /* Lift the element by 5px */
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
-  /* Enhanced box shadow on hover */
 }
 
 .tech-img {
@@ -151,6 +149,10 @@ header {
   display: flex;
   flex-direction: column;
 }
+.certificates-title {
+  width: 100%;
+  margin-top: 5%;
+}
 
 .certificates-arrows-div {
   display: none;
@@ -182,8 +184,7 @@ header {
   flex-direction: column;
   padding: 2%;
   cursor: pointer;
-  /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s; */
+  transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 .certificate-div:hover {
@@ -212,35 +213,38 @@ header {
 }
 
 .certificate-name-year-div h6 {
-  margin: 2% 0;
+  margin: 2% 2%;
   font-size: 20px;
 }
 
 .certificate-name-year-div p {
-  margin-top: 0;
+  margin: 0 2% 2%;
   font-size: 20px;
 }
-.see-more-div{
+.certificates-see-more-div{
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.see-more-div p{
+.certificates-see-more-div p{
   font-size: 16px;
   text-decoration: underline;
   cursor: pointer;
 }
-.see-more-div p:hover{
+.certificates-see-more-div p:hover{
   font-weight: 600;
 }
 /* --- */
 
 
 @media (min-width: 724px) {
+  .main-certificates-div{
+    width: 70%;
+  }
   .certificates-info-div-short{
     display: none;
   }
-  .see-more-div{
+  .certificates-see-more-div{
     display: none;
   }
   .certificates-info-div-long-hidden,
@@ -248,7 +252,80 @@ header {
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 20px;
+    gap: 20px;
+    scroll-behavior: smooth;
   }
+  .certificates-container {
+    position: relative;
+  }
+  
+  .certificates-arrows-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .certificates-arrows-content-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    z-index: 10;
+  }
+  .certificates-arrows-content-div:hover{
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+  }
+  .certificates-arrows-content-div:hover p{
+    font-weight: 600;
+  }
+  
+  .certificates-scroll-container {
+    overflow-x: scroll;
+  }
+  
+  .certificate-div {
+    flex: 0 0 auto;
+    width: 300px; 
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .certificate-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .certificate-name-year-div {
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .certificates-scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .certificates-arrows-content-div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .certificates-arrows-content-div:first-child {
+    left: -5%;
+  }
+  
+  .certificates-arrows-content-div:last-child {
+    right: -5%;
+  }
+  
 }
 
 /*************** projects ***************/

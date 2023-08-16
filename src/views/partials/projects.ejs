@@ -1,0 +1,28 @@
+<div class="main-certificates-div">
+    <div class="certificates-title">
+        <h2>Certificates</h2>
+    </div>
+
+<div class="certificates-container">
+ <div class="certificates-scroll-container">
+            <div class="certificates-info-div-long-hidden">
+                <% for( let i=0; i < certificates.length ; i++ ) {%>
+                    <div class="certificate-div">
+                        <div class="certificate-img">
+                            <img src='/images/certificates/<%= certificates[i].image %>' alt="">
+                        </div>
+                        <div class="certificate-name-year-div">
+                            <h6> <%= certificates[i].name %> </h6>
+                            <p>( <%= certificates[i].year %> )</p>
+                        </div>
+                    </div>
+                    <% } %>
+                        <div class="certificates-see-more-div">
+                            <p id="certificates-see-less">See less...</p>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

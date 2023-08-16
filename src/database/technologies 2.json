@@ -1,0 +1,44 @@
+{
+    "back": [
+        {
+            "name": "JavaScript",
+            "image": "JavaScript.png"
+        },
+        {
+            "name": "Node.js",
+            "image": "nodejs.png"
+        },
+        {
+            "name": "SQL",
+            "image": "sql.png"
+        }
+    ],
+    "front":[
+        {
+            "name":"React.js",
+            "image": "reactjs.webp"
+        },
+        {
+            "name":"HTML5",
+            "image": "html5.png"
+        },
+        {
+            "name":"CSS5",
+            "image": "css3.png"
+        }
+    ],
+    "tools":[
+        {
+            "name": "Git",
+            "image" : "git.png"
+        },
+        {
+            "name": "GitHub",
+            "image" : "github.png"
+        },
+        {
+            "name": "Postman",
+            "image" : "postman.png"
+        }
+    ]
+}
