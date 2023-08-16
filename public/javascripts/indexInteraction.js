@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // HEADER LINKS
+    const iconElements = document.querySelectorAll(".h-apps-div i");
+
+    iconElements.forEach((icon) => {
+        icon.addEventListener("click", function () {
+            const url = icon.getAttribute("data-url");
+            if (url) {
+                window.location.href = url;
+            }
+        });
+    });
     // CERTIFICATES
     // See More/See Less Logic
     const seeMoreButton = document.getElementById("certificates-see-more");

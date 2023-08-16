@@ -1,28 +1,24 @@
-<div class="main-certificates-div">
-    <div class="certificates-title">
-        <h2>Certificates</h2>
+<div class="main-projects-div">
+    <div class="projects-title">
+        <h2>projects</h2>
     </div>
 
-<div class="certificates-container">
- <div class="certificates-scroll-container">
-            <div class="certificates-info-div-long-hidden">
-                <% for( let i=0; i < certificates.length ; i++ ) {%>
-                    <div class="certificate-div">
-                        <div class="certificate-img">
-                            <img src='/images/certificates/<%= certificates[i].image %>' alt="">
-                        </div>
-                        <div class="certificate-name-year-div">
-                            <h6> <%= certificates[i].name %> </h6>
-                            <p>( <%= certificates[i].year %> )</p>
-                        </div>
-                    </div>
-                    <% } %>
-                        <div class="certificates-see-more-div">
-                            <p id="certificates-see-less">See less...</p>
-                        </div>
+    <div class="projects-info-div-long">
+        <% for( let i=0; i < projects.length ; i++ ) {%>
+            <div data-client="<%=projects[i].client%>" data-server="<%=projects[i].server%>" class="projects-div">
+                <div class="projects-img">
+                    <img src='/images/projects/<%=projects[i].image%>' alt="">
+                </div>
+                <div class="projects-name-year-div">
+                    <h6>
+                        <%= projects[i].name %>
+                    </h6>
+                    <p>( <%= projects[i].year %> )</p>
+                </div>
             </div>
-        </div>
+            <% } %>
     </div>
+
 
 
 </div>

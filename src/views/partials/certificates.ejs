@@ -7,11 +7,11 @@
         <!-- Short -->
         <div class="certificates-info-div-short">
             <% for( let i=0; i < 3; i++ ) {%>
-                <div class="certificate-div">
-                    <div class="certificate-img">
+                <div class="certificates-div">
+                    <div class="certificates-img">
                         <img src='/images/certificates/<%= certificates[i].image %>' alt="">
                     </div>
-                    <div class="certificate-name-year-div">
+                    <div class="certificates-name-year-div">
                         <h6>
                             <%= certificates[i].name %>
                         </h6>
@@ -38,11 +38,11 @@
         <div class="certificates-scroll-container">
             <div class="certificates-info-div-long-hidden">
                 <% for( let i=0; i < certificates.length ; i++ ) {%>
-                    <div class="certificate-div">
-                        <div class="certificate-img">
+                    <div class="certificates-div">
+                        <div class="certificates-img">
                             <img src='/images/certificates/<%= certificates[i].image %>' alt="">
                         </div>
-                        <div class="certificate-name-year-div">
+                        <div class="certificates-name-year-div">
                             <h6> <%= certificates[i].name %> </h6>
                             <p>( <%= certificates[i].year %> )</p>
                         </div>
