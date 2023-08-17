@@ -1,6 +1,6 @@
 {
   "name": "digital-portfolio",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Portfolio Web",
   "engines": {
     "node": "14.x"
