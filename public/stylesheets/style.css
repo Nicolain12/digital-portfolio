@@ -45,6 +45,17 @@ header {
     position: absolute;
   }
 
+  .h-logo-div h3 {
+    color: white;
+  }
+    .h-logo-div h5 {
+      color: white;
+    }
+    .h-apps-div i {
+      color: white;
+    }
+    
+
   .h-apps-div {
     width: 15%;
   }
@@ -52,13 +63,16 @@ header {
 
 /*************** banner ***************/
 .banner-img {
-  display: none;
-  width: 100%;
+  /* display: none; */
+  margin-top: 2%;
+  width: 95%;
 }
 
 @media (min-width: 724px) {
   .banner-img {
     display: block;
+    margin: 0;
+    width: 100%;
   }
 }
 
