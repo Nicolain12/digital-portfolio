@@ -1,7 +1,8 @@
-*{
+* {
   box-sizing: border-box;
   font-family: 'Dosis', sans-serif;
 }
+
 body {
   width: 100vw;
   margin: 0%;
@@ -52,13 +53,15 @@ header {
   .h-logo-div h3 {
     color: white;
   }
-    .h-logo-div h5 {
-      color: white;
-    }
-    .h-apps-div i {
-      color: white;
-    }
-    
+
+  .h-logo-div h5 {
+    color: white;
+  }
+
+  .h-apps-div i {
+    color: white;
+  }
+
 
   .h-apps-div {
     width: 15%;
@@ -105,7 +108,7 @@ header {
   width: 100%;
 }
 
-.tech-title h4{
+.tech-title h4 {
   font-size: 20px;
 }
 
@@ -409,15 +412,16 @@ header {
   border: 1px solid black;
 }
 
-.projects-name-year-div { /**/
+.projects-name-year-div {
+  /**/
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.projects-name-year-content{
-  width: 70%;
+.projects-name-year-content {
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -434,40 +438,21 @@ header {
   font-size: 20px;
 }
 
-.projects-git-link-div{
+.projects-git-link-div {
+  display: none;
+}
+.projects-git-link-div-mobile {
   width: 30%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
-.projects-git-link-div i{
-  font-size: 30px;
-  margin-top: 15%;
-  transition: color 0.3s;
-}
 
-.projects-options {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 5px;
-  z-index: 1;
-}
-
-.projects-options:hover {
-  display: block;
-}
-
-.projects-options option:hover{
-background-color: gray;
-color: white;
-}
-
-.projects-git-link-div i:hover + .projects-options {
-  display: block;
+.projects-link-div-mobile{
+  display: flex;
+  margin: 5% 0;
 }
 
 @media (min-width: 724px) {
@@ -497,24 +482,65 @@ color: white;
     height: auto;
   }
 
-  .projects-name-year-div { /**/
+  .projects-name-year-div {
     background-color: #f0f0f0;
     text-align: center;
   }
 
+  .projects-git-link-div-mobile{
+    display: none;
+  }
+  .projects-git-link-div {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .projects-git-link-div i {
+    font-size: 30px;
+    margin-top: 15%;
+    transition: color 0.3s;
+  }
+  
+  .projects-options {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    z-index: 1;
+  }
+  
+  .projects-options:hover {
+    display: block;
+  }
+  
+  .projects-options option:hover {
+    background-color: gray;
+    color: white;
+  }
+  
+  .projects-git-link-div i:hover+.projects-options {
+    display: block;
+  }
 }
 
 /*************** contact ***************/
-.main-contact-div{
+.main-contact-div {
   width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.contact-title{
+
+.contact-title {
   width: 100%;
   margin-top: 2%;
 }
+
 .contact-form {
   width: 100%;
   margin: 40px 0 50px;
@@ -597,9 +623,10 @@ color: white;
 }
 
 @media (min-width: 724px) {
-  .main-contact-div{
+  .main-contact-div {
     width: 70%;
   }
+
   .contact-form {
     flex-direction: row;
     align-items: flex-start;
@@ -622,11 +649,12 @@ color: white;
 }
 
 /*************** footer ***************/
-footer{
+footer {
   width: 95%;
   border-top: 1px black solid;
 }
-footer h6{
+
+footer h6 {
   width: 100%;
   text-align: start;
   margin-left: 5%;

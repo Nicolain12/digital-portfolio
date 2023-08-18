@@ -42,16 +42,51 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //PROJECTS
-    //Links
+    //Links (Desktop)
     const options = document.querySelectorAll('.projects-options option');
 
     options.forEach(option => {
-      option.addEventListener('click', function() {
-        const url = this.getAttribute('data-url');
-        if (url) {
-          window.open(url, '_blank');
-        }
-      });
+        option.addEventListener('click', function () {
+            const url = this.getAttribute('data-url');
+            if (url) {
+                window.open(url, '_blank');
+            }
+        });
+    });
+
+    //Links (Mobile)
+    const githubIcons = document.querySelectorAll('.fa-github');
+    const optionDivs = document.querySelectorAll('.projects-link-div-mobile');
+
+    // Add click event listeners to each GitHub icon
+    githubIcons.forEach((githubIcon, index) => {
+        githubIcon.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent the click from reaching projects-div
+            githubIcon.style.display = 'none';
+            optionDivs[index].style.display = 'block';
+        });
+    });
+
+    // Add click event listeners to the options
+    optionDivs.forEach((optionDiv, index) => {
+        optionDiv.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent the click from reaching projects-div
+            
+            const url = event.currentTarget.querySelector('option').getAttribute('data-url');
+
+            if (url) {
+                // Open a new window with the specified URL
+                window.open(url, '_blank');
+            }
+        });
+    });
+
+    // Add click event listener to the document to hide options when clicking outside
+    document.addEventListener('click', () => {
+        githubIcons.forEach((githubIcon, index) => {
+            githubIcon.style.display = 'block';
+            optionDivs[index].style.display = 'none';
+        });
     });
 });
 
