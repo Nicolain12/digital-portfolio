@@ -40,5 +40,18 @@ document.addEventListener("DOMContentLoaded", function () {
     rightArrow.addEventListener("click", function () {
         scrollContainer.scrollBy(scrollStep, 0);
     });
+
+    //PROJECTS
+    //Links
+    const options = document.querySelectorAll('.projects-options option');
+
+    options.forEach(option => {
+      option.addEventListener('click', function() {
+        const url = this.getAttribute('data-url');
+        if (url) {
+          window.open(url, '_blank');
+        }
+      });
+    });
 });
 

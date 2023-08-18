@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- ICON -->
-     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <%- include('./partials/header.ejs') %>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- ICON -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <%- include('./partials/header.ejs') %>
     <!-- BANNER HERE -->
     <img class="banner-img" src="/images/banner/Component1.png" alt="">
     <!----------------->
     <%- include('./partials/knowledges.ejs') %>
-    <%- include('./partials/certificates.ejs') %>
-    <%- include('./partials/projects.ejs') %>
-    <%- include('./partials/contact.ejs') %>
-    <%- include('./partials/footer.ejs') %>
-    <script src="/javascripts/indexInteraction.js"></script>
-  </body>
+      <%- include('./partials/certificates.ejs') %>
+        <%- include('./partials/projects.ejs') %>
+          <%- include('./partials/contact.ejs') %>
+            <%- include('./partials/footer.ejs') %>
+              <script src="/javascripts/indexInteraction.js"></script>
+</body>
+
 </html>

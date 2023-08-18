@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
 body {
   width: 100vw;
   margin: 0%;
@@ -99,6 +103,10 @@ header {
 
 .tech-title {
   width: 100%;
+}
+
+.tech-title h4{
+  font-size: 20px;
 }
 
 .knowledge-tech-main-div {
@@ -401,22 +409,65 @@ header {
   border: 1px solid black;
 }
 
-.projects-name-year-div {
+.projects-name-year-div { /**/
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.projects-name-year-content{
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.projects-name-year-div h6 {
+.projects-name-year-content h6 {
   margin: 2% 2%;
   font-size: 20px;
 }
 
-.projects-name-year-div p {
+.projects-name-year-content p {
   margin: 0 2% 2%;
   font-size: 20px;
+}
+
+.projects-git-link-div{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects-git-link-div i{
+  font-size: 30px;
+  margin-top: 15%;
+  transition: color 0.3s;
+}
+
+.projects-options {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  z-index: 1;
+}
+
+.projects-options:hover {
+  display: block;
+}
+
+.projects-options option:hover{
+background-color: gray;
+color: white;
+}
+
+.projects-git-link-div i:hover + .projects-options {
+  display: block;
 }
 
 @media (min-width: 724px) {
@@ -446,7 +497,7 @@ header {
     height: auto;
   }
 
-  .projects-name-year-div {
+  .projects-name-year-div { /**/
     background-color: #f0f0f0;
     text-align: center;
   }
