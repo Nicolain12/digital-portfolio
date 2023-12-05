@@ -53,20 +53,24 @@
             "image": "github.png"
         },
         {
-            "name": "Postman",
-            "image": "postman.png"
+            "name": "Sequelize",
+            "image": "Sequelize.png"
         },
         {
             "name": "Express.js",
             "image": "Express.png"
         },
         {
+            "name": "JsonWebToken",
+            "image": "JWT.svg"
+        },
+        {
             "name": "Jquery",
             "image": "jquery.png"
         },
         {
-            "name": "Sequelize",
-            "image": "Sequelize.png"
+            "name": "Postman",
+            "image": "postman.png"
         }
     ]
 }
