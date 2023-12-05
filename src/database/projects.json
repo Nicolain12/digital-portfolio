@@ -7,6 +7,13 @@
         "client": " https://github.com/Maxipar03/front-pureWheel.git"
     },
     {
+        "name": "GainsGear",
+        "image": "GainsGear.png",
+        "year": 2023,
+        "server": "https://github.com/Nicolain12/digital-portfolio.git",
+        "client": "https://github.com/Nicolain12/digital-portfolio.git"
+    },
+    {
         "name": "Digital Tourism",
         "image": "digitalTourism.png",
         "year": 2023,

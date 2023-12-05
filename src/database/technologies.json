@@ -1,6 +1,10 @@
 {
     "back": [
         {
+            "name": "TypeScript",
+            "image": "TypeScript.png"
+        },
+        {
             "name": "JavaScript",
             "image": "JavaScript.png"
         },
@@ -11,34 +15,58 @@
         {
             "name": "SQL",
             "image": "sql.png"
+        },
+        {
+            "name": "MySQL",
+            "image": "MySQL.png"
+        },
+        {
+            "name": "APIs",
+            "image": "APIs.png"
         }
     ],
-    "front":[
+    "front": [
         {
-            "name":"React.js",
+            "name": "React",
             "image": "reactjs.webp"
         },
         {
-            "name":"HTML5",
+            "name": "HTML5",
             "image": "html5.png"
         },
         {
-            "name":"CSS5",
+            "name": "CSS5",
             "image": "css3.png"
+        },
+        {
+            "name": "Firebase",
+            "image": "firebase.png"
         }
     ],
-    "tools":[
+    "tools": [
         {
             "name": "Git",
-            "image" : "git.png"
+            "image": "git.png"
         },
         {
             "name": "GitHub",
-            "image" : "github.png"
+            "image": "github.png"
         },
         {
             "name": "Postman",
-            "image" : "postman.png"
+            "image": "postman.png"
+        },
+        {
+            "name": "Express.js",
+            "image": "Express.png"
+        },
+        {
+            "name": "Jquery",
+            "image": "jquery.png"
+        },
+        {
+            "name": "Sequelize",
+            "image": "Sequelize.png"
         }
     ]
 }
