@@ -1,5 +1,5 @@
 {
-    "back": [
+    "mainStack": [
         {
             "name": "TypeScript",
             "image": "TypeScript.png"
@@ -17,15 +17,9 @@
             "image": "sql.png"
         },
         {
-            "name": "MySQL",
-            "image": "MySQL.png"
-        },
-        {
             "name": "APIs",
             "image": "APIs.png"
-        }
-    ],
-    "front": [
+        },
         {
             "name": "React",
             "image": "reactjs.webp"
@@ -49,6 +43,10 @@
             "image": "github.png"
         },
         {
+            "name": "MySQL",
+            "image": "MySQL.png"
+        },
+        {
             "name": "Sequelize",
             "image": "Sequelize.png"
         },
@@ -63,10 +61,6 @@
         {
             "name": "JsonWebToken",
             "image": "JWT.svg"
-        },
-        {
-            "name": "Jquery",
-            "image": "jquery.png"
         },
         {
             "name": "Postman",

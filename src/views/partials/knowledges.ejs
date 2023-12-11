@@ -6,10 +6,10 @@
         <!-- Back -->
         <div class="knowledge-tech-div">
             <div class="tech-title">
-                <h4>🔙 Back-End</h4>
+                <h4>🖥️ Main Stack</h4>
             </div>
            <div class="tech-row">
-            <% for( const tech of backEnd ){%>
+            <% for( const tech of mainStack ){%>
                 <div class="technologie-div">
                     <div class="tech-img">
                         <img src='/images/technologies/<%= tech.image %>' alt="">
@@ -22,27 +22,6 @@
                 </div>
                 <% } %>
            </div>
-        </div>
-        <!-- Front -->
-        <div class="knowledge-tech-div">
-            <div class="tech-title">
-                <h4>🖥️ Front-End</h4>
-            </div>
-            <div class="tech-row">
-                <% for( const tech of frontEnd ){%>
-                    <div class="technologie-div">
-                        <div class="tech-img">
-                            <img src='/images/technologies/<%= tech.image %>' alt="">
-                        </div>
-                        <div class="tech-name">
-                            <h6>
-                                <%= tech.name %>
-                            </h6>
-                        </div>
-                    </div>
-                    <% } %>
-            </div>
-           
         </div>
         <!-- Tools -->
         <div class="knowledge-tech-div">

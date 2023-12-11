@@ -7,8 +7,7 @@ module.exports = {
         const projects = JSON.parse(fs.readFileSync(__dirname + '/../database/projects.json', 'utf8'));
         res.render('index', {
             title: 'Portfolio', 
-            backEnd: knowledge.back,
-            frontEnd: knowledge.front,
+            mainStack: knowledge.mainStack,
             tools: knowledge.tools,
             certificates: certificates,
             projects: projects

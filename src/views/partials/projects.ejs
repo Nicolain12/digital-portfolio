@@ -3,45 +3,81 @@
         <h2>projects</h2>
     </div>
 
-    <div class="projects-info-div-long">
-        <% for( let i=0; i < projects.length ; i++ ) {%>
-            <div class="projects-div">
-                <div class="projects-img">
-                    <img src='/images/projects/<%=projects[i].image%>' alt="">
-                </div>
-                <div class="projects-name-year-div">
-                    <div class="projects-name-year-content">
+    <div class="projects-container">
+        <!-- Short -->
+        <div class="projects-info-div-short">
+            <% for( let i=0; i < 3; i++ ) {%>
+                <div class="projects-div">
+                    <div class="projects-img">
+                        <img src='/images/projects/<%= projects[i].image %>' alt="">
+                    </div>
+                    <div class="projects-name-year-div">
                         <h6>
                             <%= projects[i].name %>
                         </h6>
-                        <p>( <%= projects[i].year %> )</p>
+                        <p>
+                            ( <%= projects[i].year %> )
+                        </p>
                     </div>
-
-                    <div class="projects-git-link-div-mobile">
-                        <div class="projects-link-div-mobile">
-                            <i class="fa-brands fa-github"></i>
-                            <option data-url="<%=projects[i].client%>">Client Side</option>
-                        </div>
-                        <div class="projects-link-div-mobile">
-                            <i class="fa-brands fa-github"></i>
-                            <option data-url="<%=projects[i].server%>">Server Side</option>
-                        </div>
-                    </div>
-
-                    <div class="projects-git-link-div">
-                        <i class="fa-brands fa-github" data-url="https://github.com/Nicolain12"></i>
-                        <div class="projects-options">
-                            <option data-url="<%=projects[i].client%>">Client Side</option>
-                            <option data-url="<%=projects[i].server%>">Server Side</option>
-                        </div>
-                    </div>
-
-
                 </div>
+                <% } %>
+                    <div class="projects-see-more-div">
+                        <p id="projects-see-more">See more...</p>
+                    </div>
+        </div>
+        <!-- Arrows -->
+        <!-- <div class="projects-arrows-div">
+            <div class="projects-arrows-content-div">
+                <p> &lt; </p>
             </div>
-            <% } %>
-    </div>
+            <div class="projects-arrows-content-div">
+                <p> &gt; </p>
+            </div>
+        </div> -->
+        <!-- Long -->
+        <div class="projects-scroll-container">
+            <div class="projects-info-div-long-hidden">
+                <% for( let i=0; i < projects.length ; i++ ) {%>
+                    <div class="projects-div">
+                        <div class="projects-img">
+                            <img src='/images/projects/<%= projects[i].image %>' alt="">
+                        </div>
+                        <div class="projects-name-year-div">
+                           <div class="projects-name-year-info">
+                            <h6>
+                                <%= projects[i].name %>
+                            </h6>
+                            <p>( <%= projects[i].year %> )</p>
+                           </div>
 
+                            <div class="projects-git-link-div-mobile">
+                                <div class="projects-link-div-mobile">
+                                    <i class="fa-brands fa-github"></i>
+                                    <option data-url="<%=projects[i].client%>">Client Side</option>
+                                </div>
+                                <div class="projects-link-div-mobile">
+                                    <i class="fa-brands fa-github"></i>
+                                    <option data-url="<%=projects[i].server%>">Server Side</option>
+                                </div>
+                            </div>
+
+                            <div class="projects-git-link-div">
+                                <i class="fa-brands fa-github" data-url="https://github.com/Nicolain12"></i>
+                                <div class="projects-options">
+                                    <option data-url="<%=projects[i].client%>">Client Side</option>
+                                    <option data-url="<%=projects[i].server%>">Server Side</option>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <% } %>
+                        <div class="projects-see-more-div">
+                            <p id="projects-see-less">See less...</p>
+                        </div>
+            </div>
+        </div>
+    </div>
 
 
 </div>

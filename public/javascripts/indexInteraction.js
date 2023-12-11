@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         shortDiv.classList.replace("certificates-info-div-short-hidden", "certificates-info-div-short");
         longHiddenDiv.classList.replace("certificates-info-div-long", "certificates-info-div-long-hidden");
     });
-    // Arrows Logic
+    // Arrows Logic (Certificates)
     const scrollContainer = document.querySelector(".certificates-scroll-container");
     const leftArrow = document.querySelector(".certificates-arrows-content-div:first-child");
     const rightArrow = document.querySelector(".certificates-arrows-content-div:last-child");
@@ -40,6 +40,22 @@ document.addEventListener("DOMContentLoaded", function () {
     rightArrow.addEventListener("click", function () {
         scrollContainer.scrollBy(scrollStep, 0);
     });
+    // Arrows Logic (Projects)
+    const scrollContainerProjects = document.querySelector(".projects-scroll-container");
+    const leftArrowProjects = document.querySelector(".projects-arrows-content-div:first-child");
+    const rightArrowProjects = document.querySelector(".projects-arrows-content-div:last-child");
+
+    const scrollStepProjects = 500; // Adjust the scroll step as needed
+
+    leftArrow.addEventListener("click", function () {
+        scrollContainer.scrollBy(-scrollStepProjects, 0);
+    });
+
+    rightArrow.addEventListener("click", function () {
+        scrollContainer.scrollBy(scrollStepProjects, 0);
+    });
+    
+
 
     //PROJECTS
     //Links (Desktop)

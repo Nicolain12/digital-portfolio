@@ -17,7 +17,9 @@ body {
 header {
   width: 95%;
   display: flex;
+  margin-bottom: 1%;
   justify-content: space-between;
+  position: fixed;
 }
 
 .h-logo-div h3 {
@@ -32,6 +34,7 @@ header {
   width: 40%;
   display: flex;
   justify-content: space-between;
+  z-index: 7;
 }
 
 .h-apps-div i {
@@ -72,10 +75,6 @@ header {
 .banner {
   width: 95%;
   padding: 2%;
-  background-image: url('/images/banner/backround.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
 }
 
@@ -90,7 +89,7 @@ header {
   width: 50%;
 }
 
-.banner-info {
+.banner-info.mob {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,37 +97,74 @@ header {
   width: 50%;
 }
 
+.banner-info.dek {
+  display: none;
+}
+
 .banner-info h1 {
-  color: white;
+  color: black;
   margin: 1% 0;
 }
 
 .banner-info h3 {
-  color: white;
+  color: black;
   margin: 1% 0;
 }
 
 .banner-info a {
-  color: white;
+  color: black;
   margin: 1% 0;
 }
 
 @media (min-width: 724px) {
-.banner {
-  width: 100%;
-}
-.banner-info h1 {
-  font-size: 80px;
-}
+  .banner {
+    width: 100%;
+    height: 40vh;
+    background-color: gray;
+    justify-content: space-around;
+  }
 
-.banner-info h3 {
-  font-size: 60px;
+  .banner-img {
+    height: 100%;
+    width: 20%;
+  }
 
-}
+  .banner-img img {
+    width: auto;
+    height: 100%;
+  }
 
-.banner-info a {
-  font-size: 30px;
-}
+  .banner-info.mob {
+    display: none;
+  }
+
+  .banner-info.dek {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 60%;
+  }
+
+  .banner-info h1 {
+    color: white;
+    width: 100%;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .banner-info p {
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .banner-info a {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+  }
 
 }
 
@@ -160,13 +196,15 @@ header {
 .tech-title h4 {
   font-size: 20px;
 }
-.tech-row{
+
+.tech-row {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .knowledge-tech-main-div {
   width: 100%;
   display: flex;
@@ -217,17 +255,20 @@ header {
     width: 70%;
     border-top: none;
   }
-  .tech-row{
+
+  .tech-row {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
   }
+
   .technologie-div {
     width: 30%;
     margin: 0 2%;
   }
 }
+
 @media (min-width: 1024px) {
   .technologie-div {
     width: 20%;
@@ -245,7 +286,8 @@ header {
   width: 100%;
   margin: 10% 0 5%;
 }
-.certificates-title h2{
+
+.certificates-title h2 {
   margin: 0;
 }
 
@@ -344,6 +386,7 @@ header {
   .main-certificates-div {
     width: 70%;
   }
+
   .certificates-title {
     margin: 10% 0 0;
   }
@@ -387,7 +430,7 @@ header {
     border-radius: 50%;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
-    z-index: 10;
+    z-index: 5;
   }
 
   .certificates-arrows-content-div:hover {
@@ -449,7 +492,27 @@ header {
 
 .projects-title {
   width: 100%;
-  margin-top: 2%;
+  margin: 10% 0 5%;
+}
+
+.projects-title h2 {
+  margin: 0;
+}
+
+.projects-arrows-div {
+  display: none;
+  padding: 0;
+}
+
+.projects-info-div-short {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-info-div-short-hidden {
+  display: none;
 }
 
 .projects-info-div-long {
@@ -459,6 +522,11 @@ header {
   align-items: center;
 }
 
+.projects-info-div-long-hidden {
+  display: none;
+}
+
+/* --- */
 .projects-div {
   width: 70%;
   display: flex;
@@ -486,29 +554,37 @@ header {
 }
 
 .projects-name-year-div {
-  /**/
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.projects-name-year-content {
-  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.projects-name-year-content h6 {
+.projects-name-year-div h6 {
   margin: 2% 2%;
   font-size: 20px;
 }
 
-.projects-name-year-content p {
+.projects-name-year-div p {
   margin: 0 2% 2%;
   font-size: 20px;
+}
+
+.projects-see-more-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-see-more-div p {
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.projects-see-more-div p:hover {
+  font-weight: 600;
 }
 
 .projects-git-link-div {
@@ -529,18 +605,68 @@ header {
   margin: 5% 0;
 }
 
+
 @media (min-width: 724px) {
   .main-projects-div {
     width: 70%;
   }
 
+  .projects-title {
+    margin: 10% 0 0;
+  }
+
+  .projects-info-div-short {
+    display: none;
+  }
+
+  .projects-see-more-div {
+    display: none;
+  }
+
+  .projects-info-div-long-hidden,
   .projects-info-div-long {
     width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 20px;
     gap: 20px;
+    scroll-behavior: smooth;
+  }
+
+  .projects-container {
+    position: relative;
+  }
+
+  .projects-arrows-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .projects-arrows-content-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    z-index: 5;
+  }
+
+  .projects-arrows-content-div:hover {
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .projects-arrows-content-div:hover p {
+    font-weight: 600;
+  }
+
+  .projects-scroll-container {
+    overflow-x: scroll;
   }
 
   .projects-div {
@@ -559,6 +685,30 @@ header {
   .projects-name-year-div {
     background-color: #f0f0f0;
     text-align: center;
+    flex-direction: row;
+    align-content: space-between;
+  }
+.projects-name-year-info{
+  width: 50%;
+}
+
+/* 
+  .projects-scroll-container::-webkit-scrollbar {
+    display: flex;
+  } */
+
+  .projects-arrows-content-div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .projects-arrows-content-div:first-child {
+    left: -5%;
+  }
+
+  .projects-arrows-content-div:last-child {
+    right: -5%;
   }
 
   .projects-git-link-div-mobile {
@@ -566,7 +716,7 @@ header {
   }
 
   .projects-git-link-div {
-    width: 30%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -602,7 +752,6 @@ header {
     display: block;
   }
 }
-
 /*************** contact ***************/
 .main-contact-div {
   width: 95%;
